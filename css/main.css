@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Libre Baskerville");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url("../img/showcase-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  color: #181818;
+  font-family: 'Roboto', sans-serif; }
+
+.logo h1 {
+  font-family: 'Libre Baskerville', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 3rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50vh; }
+
+#form-content {
+  position: relative;
+  background: #fff;
+  width: 650px;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 7px; }
+
+#btn-next {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  font-size: 2.5rem;
+  color: #2b2d42;
+  cursor: pointer;
+  z-index: 1; }
+  #btn-next:hover {
+    color: #8d99ae; }
+
+#btn-prev {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.5rem;
+  color: #6872af;
+  cursor: pointer;
+  z-index: 1; }
+  #btn-prev:hover {
+    color: #8d99ae; }
+
+#input-group {
+  position: relative;
+  opacity: 0;
+  padding: 40px 20px;
+  margin: 10px 60px 10px 10px; }
+  #input-group input {
+    outline: none;
+    border: none;
+    width: 100%;
+    position: relative; }
+  #input-group #field-input {
+    font-size: 1.1rem; }
+  #input-group #label-input {
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    color: #181818; }
+  #input-group input:valid + #label-input {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    color: #4f5561; }
+
+#error-msg {
+  margin-bottom: 0.5rem;
+  background: #d90429;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  opacity: 0; }
+
+@media (max-width: 650px) {
+  #form-content {
+    width: 80%; } }
